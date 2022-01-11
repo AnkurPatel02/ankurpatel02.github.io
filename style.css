@@ -478,6 +478,14 @@ nav.sticky {
 }
 
 
+@media(max-width:980px) {
+    #location {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
 
 
 
