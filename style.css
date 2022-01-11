@@ -372,14 +372,13 @@ nav.sticky {
 }
 
 #carouselExampleDark {
-    width: 65%;
+    width: 70%;
     margin: auto;
-    /* align-items: top; */
 }
 
 @media(max-width:1200px) {
     .sectionHead {
-        font-size: 40px;
+        font-size: 85px;
         letter-spacing: 25px;
         text-align: center;
     }
@@ -417,6 +416,10 @@ nav.sticky {
     #rCoverPicMobile {
         display: block;
     }
+
+    #carouselExampleDark {
+        width: 90%;
+    }
 }
 
 
@@ -453,6 +456,11 @@ nav.sticky {
 
     #commImgMobile {
         display: block;
+    }
+
+    #carouselExample {
+        width: 90%;
+        padding: 20px 0px 50px;
     }
 }
 
