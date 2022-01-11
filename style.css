@@ -326,8 +326,8 @@ nav.sticky {
 
 #CoverDesc {
     width: 80%;
-    height: auto;
     margin: auto;
+    height: auto;
 }
 
 #ammenities {
@@ -381,6 +381,7 @@ nav.sticky {
     .sectionHead {
         font-size: 40px;
         letter-spacing: 25px;
+        text-align: center;
     }
 
     .flatSize p {
@@ -401,6 +402,7 @@ nav.sticky {
     .sectionHead {
         font-size: 45px;
         letter-spacing: 10px;
+        text-align: center;
     }
 
     #CoverDesc {
