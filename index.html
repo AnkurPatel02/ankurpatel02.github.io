@@ -74,6 +74,11 @@
 
     <div id="nota">
       <div id="CoverDesc">
+        <!-- <div class="row">
+          <div class="col-lg-12">
+            <h1>Ammenities</h1>
+          </div>
+        </div> -->
         <div class="row" id="ammenities">
           <div class="col-6 col-lg-3">
             <div><img src="photos/road.png" alt="" id="icon"></div>
@@ -111,43 +116,44 @@
           </div>
         </div>
       </div>
-    
 
-    <!-- BOOTSTRAP CAROUSEL -->
 
-    <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="photos/Ground FLoor Plan-1.jpg" class="d-block w-100" alt="...">
-          <!-- <div class="carousel-caption d-none d-md-block">
+      <!-- BOOTSTRAP CAROUSEL -->
+
+      <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="photos/Ground FLoor Plan-1.jpg" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div> -->
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="photos/1st and 2nd FLoor Plan-1.jpg" class="d-block w-100" alt="...">
-          <!-- <div class="carousel-caption d-none d-md-block">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="photos/1st and 2nd FLoor Plan-1.jpg" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div> -->
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <!-- BOOTSTRAP CAROUSEL END -->
     </div>
-    <!-- BOOTSTRAP CAROUSEL END -->
-  </div>
   </div>
 
 
@@ -290,11 +296,61 @@
   </div>
 
   <!-- LOCATION  -->
-  <div id="location">
+  <div id="locationSection">
     <h1>LOCATION</h1>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0207847662114!2d72.93333971531386!3d19.15056745459983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b95a5bf5b349%3A0x4abe30cf558bcd47!2sKshitij%20Eminence!5e0!3m2!1sen!2sin!4v1640691618281!5m2!1sen!2sin"
-      width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="row" id="location">
+      <div class="col-lg-6" id="locationMap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0207847662114!2d72.93333971531386!3d19.15056745459983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b95a5bf5b349%3A0x4abe30cf558bcd47!2sKshitij%20Eminence!5e0!3m2!1sen!2sin!4v1640691618281!5m2!1sen!2sin"
+          width="90%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- <div class="col-lg-1"></div> -->
+      <div class="col-lg-6" style="height: 500px;">
+        <div class="row" id="nearby">
+          <div class="col-3">100 M</div>
+          <div class="col-9">
+            <img src="photos/park.png" class="locationIcon" alt="">
+            Madhuban Garden</div>
+        </div>
+        <div class="row" id="nearby">
+          <div class="col-3">200 M</div>
+          <div class="col-9">
+            <img src="photos/temple.png" class="locationIcon" alt="">
+            Jain Mandir</div>
+        </div>
+        <div class="row" id="nearby">
+          <div class="col-3">300 M</div>
+          <div class="col-9">
+            <img src="photos/education.png" class="locationIcon" alt="">
+            NES College</div>
+        </div>
+        <div class="row" id="nearby">
+          <div class="col-3">500 M</div>
+          <div class="col-9">
+            <img src="photos/metro.png" class="locationIcon" alt="">
+            Proposed Metro Station</div>
+        </div>
+        <div class="row" id="nearby">
+          <div class="col-3">1.4 KM</div>
+          <div class="col-9">
+            <img src="photos/subway.png" class="locationIcon" alt="">
+            Bhandup Railway Station</div>
+        </div>
+        <div class="row" id="nearby">
+          <div class="col-3">1.4 KM</div>
+          <div class="col-9">
+            <img src="photos/mall.png" class="locationIcon" alt="">
+            Magnet Mall</div>
+        </div>
+        <div class="row" id="nearby">
+          <div class="col-3">1.7 KM</div>
+          <div class="col-9">
+            <img src="photos/street-sign.png" class="locationIcon" alt="">
+            Eastern Express Highway</div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
 

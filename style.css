@@ -350,13 +350,11 @@ nav.sticky {
     background-color: #ffffff;
 }
 
-#plan h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 #lbll {
     text-decoration: underline;
+    color: rgb(74, 74, 74);
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .flatSize {
@@ -364,11 +362,12 @@ nav.sticky {
     text-align: center;
     line-height: 50px;
     padding: 0px 40px;
+    color: rgb(74, 74, 74);
 }
 
 .flatSize p {
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 #carouselExampleDark {
@@ -383,7 +382,7 @@ nav.sticky {
         text-align: center;
     }
 
-    .flatSize{
+    .flatSize {
         line-height: 20px;
     }
 
@@ -470,15 +469,39 @@ nav.sticky {
 
 
 /* LOCATION */
-#location {
-    height: 650px;
+#locationSection {
+    height: auto;
     background-color: rgba(231, 231, 231, 0.9);
 }
 
-#location h1 {
+#locationSection h1 {
     text-align: center;
     padding-top: 35px;
+    padding-bottom: 30px;
     color: rgb(74, 74, 74);
+}
+
+#location {
+    width: 80%;
+    margin: auto;
+}
+
+#locationMap {
+    margin-bottom: 25px;
+}
+
+#nearby {
+    font-size: 20px;
+    font-weight: 400;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 10px;
+    margin: 15px 0px;
+}
+
+.locationIcon{
+    height: 30px;
 }
 
 
@@ -488,10 +511,6 @@ nav.sticky {
         margin: auto;
     }
 }
-
-
-
-
 
 /* FOOTER */
 #footer {
