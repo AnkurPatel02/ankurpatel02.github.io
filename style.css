@@ -135,7 +135,7 @@ a:hover {
         line-height: 80px;
     }
 
-    ul {
+    #navButton {
         position: fixed;
         width: 100%;
         /* height: 100vh; */
@@ -150,14 +150,18 @@ a:hover {
         display: block;
         margin: 50px 0;
         line-height: 30px;
+        text-decoration: none;
     }
 
     nav ul li a {
         font-size: 20px;
     }
 
-    a:hover,
-    a.active {
+    #navButton li:hover{
+        color: aliceblue;
+    }
+    
+    a:hover,a.active {
         background: none;
         color: black;
     }
@@ -470,7 +474,6 @@ nav.sticky {
 
 /* LOCATION */
 #locationSection {
-    height: auto;
     background-color: rgba(231, 231, 231, 0.9);
 }
 
@@ -488,6 +491,7 @@ nav.sticky {
 
 #locationMap {
     margin-bottom: 25px;
+    height: 500px;
 }
 
 #nearby {
@@ -497,7 +501,11 @@ nav.sticky {
     border-radius: 5px;
     border-width: 2px;
     padding: 10px;
-    margin: 15px 0px;
+    margin:0px 0px 15px 0px;
+}
+
+#nearby .col-3{
+    font-size: 23px;
 }
 
 .locationIcon{
@@ -507,8 +515,26 @@ nav.sticky {
 
 @media(max-width:980px) {
     #location {
-        width: 80%;
+        width: 90%;
         margin: auto;
+    }
+    
+    #locationMap{
+        height: 300px;
+    }
+    
+    #nearby{
+        padding: 7px;
+        margin:0px 0px 7px 0px;
+        border-width: 1px;
+    }
+
+    #nearby .col-3{
+        font-size: 18px;
+    }
+
+    #nearby .col-9{
+        font-size: 16px;
     }
 }
 

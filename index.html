@@ -38,10 +38,10 @@
       <li><a href="#residential">Residential</a></li>
       <li>
         <div class="dropdown">
-          <a href="#plan" class="dropbtn">Floor Plans</a>
+          <a href="" class="dropbtn">Floor Plans</a>
           <div class="dropdown-content">
-            <a href="">Commercial</a>
-            <a href="">Residential</a>
+            <a href="#carouselExample">Commercial</a>
+            <a href="#plan">Residential</a>
           </div>
         </div>
       </li>
@@ -302,7 +302,7 @@
       <div class="col-lg-6" id="locationMap">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0207847662114!2d72.93333971531386!3d19.15056745459983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b95a5bf5b349%3A0x4abe30cf558bcd47!2sKshitij%20Eminence!5e0!3m2!1sen!2sin!4v1640691618281!5m2!1sen!2sin"
-          width="90%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <!-- <div class="col-lg-1"></div> -->
       <div class="col-lg-6" style="height: 500px;">
@@ -353,6 +353,15 @@
   </div>
   </div>
 
+  <div id="contactForm">
+    <form action="contact-form" action="contactform.php" method="post">
+      <input type="text" name="name" placeholder="Full Name">
+      <input type="text" name="mail" placeholder="Your E-Mail">
+      <input type="text" name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit" name="submit">Send Mail</button>
+    </form>
+  </div>
 
   <div id="footer">
   </div>
