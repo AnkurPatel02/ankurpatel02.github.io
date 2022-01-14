@@ -45,7 +45,7 @@
           </div>
         </div>
       </li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#enquiryHead">Contact Us</a></li>
     </ul>
   </nav>
 
@@ -305,7 +305,7 @@
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <!-- <div class="col-lg-1"></div> -->
-      <div class="col-lg-6" style="height: 500px;">
+      <div class="col-lg-6">
         <div class="row" id="nearby">
           <div class="col-3">100 M</div>
           <div class="col-9">
@@ -353,17 +353,50 @@
   </div>
   </div>
 
-  <div id="contactForm">
-    <form action="contact-form" action="contactform.php" method="post">
-      <input type="text" name="name" placeholder="Full Name">
-      <input type="text" name="mail" placeholder="Your E-Mail">
-      <input type="text" name="subject" placeholder="Subject">
-      <textarea name="message" placeholder="Message"></textarea>
-      <button type="submit" name="submit">Send Mail</button>
-    </form>
+
+  <!-- ENQUIRY -->
+  <h1 id="enquiryHead">CONTACT US</h1>
+
+  <div class="row">
+    <div id="contactForm" class="col-6">
+      <form action="contact-form" action="contactform.php" method="post">
+        <input class="textArea" type="text" name="name" placeholder="Full Name">
+        <input class="textArea" type="text" name="mail" placeholder="Your E-Mail">
+        <input class="textArea" type="text" name="subject" placeholder="Subject">
+        <textarea class="textArea" name="message" placeholder="Message"></textarea>
+        <button id="submitButton" type="submit" name="submit">Send Mail</button>
+      </form>
+    </div>
+    <div class="col-6" id="contactInfo">
+      <p>Email : info@kshitijspaces.com</p>
+      <p>Mobile No : +91-9152008899</p>
+      <p>Sales Office : KSHITIJ EMINENCE, Shop number 13, Jangal Mangal Road, near Bhattipada, Bhandup West, Mumbai
+        400078</p><br>
+    </div>
   </div>
 
-  <div id="footer">
+  <!-- FOOTER -->
+
+  <div id="footerContainer">
+    <div class="row" id="footer">
+      <div class="col-6">
+        <ul>
+          <li><a href="#coverContainer">Overview</a></li>
+          <li><a href="#commercialSection">Commercial</a></li>
+          <li><a href="#residentialSection">Residential</a></li>
+          <li><a href="#carouselExample">Plans</a></li>
+        </ul>
+      </div>
+      <div class="col-6" id="corporate">
+        <p>Corporate Office :<br> 813-814, Nirmal Corporate Center,<br> off LBS Marg, near Sonapur Naka,<br> Mulund
+          West, Mumbai 400080 <br>Office : 022 25904020</p>
+      </div>
+      <div class="col-12" style="padding: 10px;">Kshitij Eminence is MahaRERA registered. RERA no: P51800028688.</div>
+    </div>
+  </div>
+
+  <div id="copyright">
+    <p>Copyright © Kshitij Realtors & Developers 2015. All Rights Reserved |</p>
   </div>
 </body>
 
