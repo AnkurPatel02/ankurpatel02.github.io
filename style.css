@@ -256,9 +256,11 @@ nav.sticky {
     }
     #mobileTitle h2 {
         font-size: 20px;
+        margin-top: 12px;
     }
     #mobileTitle h4 {
         font-size: 18px;
+        margin-top: 10px;
     }
 }
 
