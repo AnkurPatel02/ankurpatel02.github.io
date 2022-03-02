@@ -108,7 +108,8 @@ a:hover {
 
     #navContent{
         width: 90%;
-        margin-left: 5%;
+        margin-left: 0px;
+        margin-right: 10%;
     }
 
     #logo {
