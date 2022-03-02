@@ -2,402 +2,223 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eminence</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rera Complaints Guidance Cell</title>
 
-  <!-- css stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-  <!-- JAVASCRIPT -->
-  <script src="script.js"></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
 </head>
 
 <body>
-  <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <img id="logo" src="photos/Kshitij Eminence - Logo1.png" alt="">
-    <ul id="navButton">
-      <li><a class="" href="#">Overview</a></li>
-      <li><a href="#commercialSection">Commercial</a></li>
-      <li><a href="#residential">Residential</a></li>
-      <li>
-        <div class="dropdown">
-          <a href="" class="dropbtn">Floor Plans</a>
-          <div class="dropdown-content">
-            <a href="#carouselExample">Commercial</a>
-            <a href="#plan">Residential</a>
-          </div>
+    <nav>
+        <div id="navContent">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <img id="logo" src="photos/logo.jpg" alt="">
+            <ul id="navButton">
+                <li><a class="" href="#cover">Overview</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#partner">LAWYERS</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
-      </li>
-      <li><a href="#enquiryHead">Contact Us</a></li>
-    </ul>
-  </nav>
+    </nav>
+    <div style="height: 70px; width: 100%;"></div>
 
-
-  <div class="coverContainer">
-    <h1 class="coverText">THE NEW SIGNATURE ADDRESS</h1>
-    <img id="coverPicDesktop" src="photos/elevation1.jpg">
-    <img id="coverPicMobile" src="photos/elevation.jpg">
-    <div id="gradCover">
-      <h2 id="coverDscrptn">We welcome you to find your calm in the chaos with Kshitij Developers. <br>
-        Been a dream project for many, 'Eminence' is here to build you your dream home. Located in the
-        uptown & unexplored beauty of Bhandup, Eminence clearly is the summit for luxury.With Ground,
-        First & Second commercials and fitness center, children play area on Podium Floor,
-        we bring you a 15 Floor Residential, with the availability of 1,2,3 Bhk flats. <br>
-        With colossal living rooms and enormous rooms we invite you to experience luxury at a place you
-        can call HOME.
-      </h2>
-    </div>
-  </div>
-
-
-  <div id="commercialSection">
-    <h1 id="commercial" class="sectionHead">COMMERCIAL</h1>
-    <img id="commImg" src="photos/commercial cover.jpg" alt="">
-    <img id="commImgMobile" src="photos/commercial cover 1.jpg" alt="">
-
-    <div id="nota">
-      <div id="CoverDesc">
-        <!-- <div class="row">
-          <div class="col-lg-12">
-            <h1>Ammenities</h1>
-          </div>
-        </div> -->
-        <div class="row" id="ammenities">
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/road.png" alt="" id="icon"></div>
-            <div>Main Road Facing</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/window.png" alt="" id="icon"></div>
-            <div>Large Windows</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/height.png" alt="" id="icon"></div>
-            <div>Upto 14 Feet Floor Height</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/three-tier-pyramid.png" alt="" id="icon"></div>
-            <div>Three Levels of Commercial Space</div>
-          </div>
+    <div id="cover">
+        <div id="mobileTitle">
+            <h1 class="coverText">RERA COMPLAINTS GUIDANCE CELL</h1>
+            <h2 class="coverText">The Consumer's Guidance & Protection Society</h2>
+            <h4 class="coverText">"Your Protection Out Duty"</h4>
         </div>
-        <div class="row" id="ammenities">
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/project.png" alt="" id="icon"></div>
-            <div>Well Thoughtout Floor Plans</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/public-toilet.png" alt="" id="icon"></div>
-            <div>Private Toilet for Each Unit</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/employee.png" alt="" id="icon"></div>
-            <div>Commercial Grade Ammenties</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/blueprint (1).png" alt="" id="icon"></div>
-            <div>Unit Area customizable from 300-1000 Sq.Ft</div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- BOOTSTRAP CAROUSEL -->
-
-      <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="photos/Ground FLoor Plan-1.jpg" class="d-block w-100" alt="...">
-            <!-- <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div> -->
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="photos/1st and 2nd FLoor Plan-1.jpg" class="d-block w-100" alt="...">
-            <!-- <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div> -->
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- BOOTSTRAP CAROUSEL END -->
-    </div>
-  </div>
-
-
-  <div class="residentialSection">
-    <h1 id="residential" class="sectionHead">RESIDENTIAL</h1>
-    <img id="rCoverPic" src="photos/residence cover.jpg">
-    <img id="rCoverPicMobile" src="photos/residence cover 1.jpg">
-    <div id="nothing">
-      <div id="CoverDesc">
-        <div class="row" id="ammenities">
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/elevator.png" alt="" id="icon"></div>
-            <div>High Speed Elevators</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/lobby.png" alt="" id="icon"></div>
-            <div>Exclusively Designed Lobby</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/cctv.png" alt="" id="icon"></div>
-            <div>CCTV</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/sprinkle.png" alt="" id="icon"></div>
-            <div>Advance Fire FIghting System</div>
-          </div>
-        </div>
-        <div class="row" id="ammenities">
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/eco.png" alt="" id="icon"></div>
-            <div>Eco-Friendly Design</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/car-park.png" alt="" id="icon"></div>
-            <div>Multi Level Car Park</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/construction.png" alt="" id="icon"></div>
-            <div>Mivan Construction</div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div><img src="photos/ventilation.png" alt="" id="icon"></div>
-            <div>Cross Ventilation</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="plan">
-      <h1 id="lbll">LIVE BETTER, LIVE LUXURY</h1>
-      <div style="width: 80%;margin: auto; display: flex; justify-content: space-around;">
-        <div class="flatSize">
-          <h2>1BHK</h2>
-          <p>390-424 sq.ft.</p>
-        </div>
-        <div class="flatSize">
-          <h2>2BHK</h2>
-          <p>598-622 sq.ft.</p>
-        </div>
-        <div class="flatSize">
-          <h2>3BHK</h2>
-          <p>807-812 sq.ft.</p>
-        </div>
-      </div>
-
-
-      <!-- BOOTSTRAP CAROUSEL -->
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
-            aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="000">
-            <img src="photos/0001.jpg" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>1 BHK</h5>
-              <p>390 SQ.FT.</p>
+        <div id="division">
+            <div id="textContainer">
+                <h1 class="coverText">RERA COMPLAINTS GUIDANCE CELL</h1>
+                <h2 class="coverText">The Consumer's Guidance & Protection Society</h2>
+                <h4 class="coverText">"Your Protection Out Duty"</h4>
             </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="000">
-            <img src="photos/0002.jpg" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>1BHK</h5>
-              <p>424 SQ.FT.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="photos/0003.jpg" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>2 BHK</h5>
-              <p>598 SQ.FT.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="photos/0004.jpg" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>2 BHK</h5>
-              <p>622 SQ.FT.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="photos/0005.jpg" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>3 BHK</h5>
-              <p>807 SQ.FT.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="photos/0006.jpg" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>3 BHK</h5>
-              <p>812 SQ.FT.</p>
-            </div>
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+        <img id="coverImg" src="photos/cover1.jpg" alt="">
+        <img id="coverImgMobile" src="photos/cover2.jpg" alt="">
+    </div>
 
-      <!-- BOOTSTRAP CAROUSEL END-->
+    <div id="aboutUs">
+        <div id="divisionAboutUs">
+        </div>
+        <div id="aboutUsContent">
+            <h1>ABOUT</h1>
+            <p id="us">US</p>
+
+            <p id="aboutPara">
+                OUR VISION
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                double click me to add your own content and make changes to the font. Feel free to drag and drop me
+                anywhere you like on your page. I’m a great place for you to tell a story and let your users know a
+                little more about you.
+                This is a great space to write long text about your company and your services. You can use this space to
+                go into a little more detail about your company. Talk about your team and what services you provide.
+                Tell your visitors the story of how you came up with the idea for your business and what makes you
+                different from your competitors. Make your company stand out and show your visitors who you are.
+                At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all
+                thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s
+                Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the
+                Wix Forum.
+        </div>
+        </p>
 
     </div>
-  </div>
-
-  <!-- LOCATION  -->
-  <div id="locationSection">
-    <h1>LOCATION</h1>
-    <div class="row" id="location">
-      <div class="col-lg-6" id="locationMap">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0207847662114!2d72.93333971531386!3d19.15056745459983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b95a5bf5b349%3A0x4abe30cf558bcd47!2sKshitij%20Eminence!5e0!3m2!1sen!2sin!4v1640691618281!5m2!1sen!2sin"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      <!-- <div class="col-lg-1"></div> -->
-      <div class="col-lg-6">
-        <div class="row" id="nearby">
-          <div class="col-3">100 M</div>
-          <div class="col-9">
-            <img src="photos/park.png" class="locationIcon" alt="">
-            Madhuban Garden</div>
-        </div>
-        <div class="row" id="nearby">
-          <div class="col-3">200 M</div>
-          <div class="col-9">
-            <img src="photos/temple.png" class="locationIcon" alt="">
-            Jain Mandir</div>
-        </div>
-        <div class="row" id="nearby">
-          <div class="col-3">300 M</div>
-          <div class="col-9">
-            <img src="photos/education.png" class="locationIcon" alt="">
-            NES College</div>
-        </div>
-        <div class="row" id="nearby">
-          <div class="col-3">500 M</div>
-          <div class="col-9">
-            <img src="photos/metro.png" class="locationIcon" alt="">
-            Proposed Metro Station</div>
-        </div>
-        <div class="row" id="nearby">
-          <div class="col-3">1.4 KM</div>
-          <div class="col-9">
-            <img src="photos/subway.png" class="locationIcon" alt="">
-            Bhandup Railway Station</div>
-        </div>
-        <div class="row" id="nearby">
-          <div class="col-3">1.4 KM</div>
-          <div class="col-9">
-            <img src="photos/mall.png" class="locationIcon" alt="">
-            Magnet Mall</div>
-        </div>
-        <div class="row" id="nearby">
-          <div class="col-3">1.7 KM</div>
-          <div class="col-9">
-            <img src="photos/street-sign.png" class="locationIcon" alt="">
-            Eastern Express Highway</div>
-        </div>
-      </div>
     </div>
-  </div>
-  </div>
 
 
-  <!-- ENQUIRY -->
-  <h1 id="enquiryHead">CONTACT US</h1>
-
-  <div class="row">
-    <div id="contactForm" class="col-6">
-      <form action="contact-form" action="contactform.php" method="post">
-        <input class="textArea" type="text" name="name" placeholder="Full Name">
-        <input class="textArea" type="text" name="mail" placeholder="Your E-Mail">
-        <input class="textArea" type="text" name="subject" placeholder="Subject">
-        <textarea class="textArea" name="message" placeholder="Message"></textarea>
-        <button id="submitButton" type="submit" name="submit">Send Mail</button>
-      </form>
+    <div id="partner">
+        <h1>OUR <span style="color: rgba(165, 42, 42,1);">ATTORNEYS</span></h1>
+        <div id="partnerContent" class="row">
+            <div class="partnerInfo col-lg-6">
+                <h2>Rajeshwar M. Deshmukh</h2>
+                <img src="photos/logo.jpg" alt="" class="partnerImage">
+                <p>dkfjhglkjsdhfgksdhfklgjhfkdh<br>sdldfkjghkljsdhfgkj</p>
+            </div>
+            <div class="partnerInfo col-lg-6">
+                <h2>Anushka R. Deshmukh</h2>
+                <img src="photos/logo.jpg" alt="" class="partnerImage">
+                <p>dkfjhglkjsdhfgksdhfklgsdfa<br>sdfasdfafasfafsadafdfsdfsfass<br>sfasdjhfkdhsdldfkjghkljsdhfgkj</p>
+            </div>
+        </div>
     </div>
-    <div class="col-6" id="contactInfo">
-      <p>Email : info@kshitijspaces.com</p>
-      <p>Mobile No : +91-9152008899</p>
-      <p>Sales Office : KSHITIJ EMINENCE, Shop number 13, Jangal Mangal Road, near Bhattipada, Bhandup West, Mumbai
-        400078</p><br>
+
+
+    <!-- FAQ -->
+    <div id="faq">
+        <h1><span style="color: rgba(165, 42, 42,1);">FAQ'</span><span style="font-size: 50px;">s</span></h1>
+
+
+
+        <div id="faqCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card border-light">
+                        <h5 class="question">My question is blah blah blah</h5>
+                        <p class="answer">the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                    </div>
+                    <div class="card border-light" style=" margin: 0px 2%;">
+                        <h5 class="question">My question is blah blah blah</h5>
+                        <p class="answer">the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                    </div>
+                    <div class="card border-light">
+                        <h5 class="question">My question is blah blah blah</h5>
+                        <p class="answer">the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card border-light">
+                        <h5 class="question">111My question is blah blah blah</h5>
+                        <p class="answer">the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                    <div class="card border-light" style=" margin: 0px 2%;">
+                        <h5 class="question">111My question is blah blah blah</h5>
+                        <p class="answer">the solution we provide wil be blah blah blah blah blah
+                            the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                    <div class="card border-light">
+                        <h5 class="question">111My question is blah blah blah</h5>
+                        <p class="answer">the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            the solution we provide wil be blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#faqCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#faqCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
     </div>
-  </div>
 
-  <!-- FOOTER -->
 
-  <div id="footerContainer">
-    <div class="row" id="footer">
-      <div class="col-6">
-        <ul>
-          <li><a href="#coverContainer">Overview</a></li>
-          <li><a href="#commercialSection">Commercial</a></li>
-          <li><a href="#residentialSection">Residential</a></li>
-          <li><a href="#carouselExample">Plans</a></li>
-        </ul>
-      </div>
-      <div class="col-6" id="corporate">
-        <p>Corporate Office :<br> 813-814, Nirmal Corporate Center,<br> off LBS Marg, near Sonapur Naka,<br> Mulund
-          West, Mumbai 400080 <br>Office : 022 25904020</p>
-      </div>
-      <div class="col-12" style="padding: 10px;">Kshitij Eminence is MahaRERA registered. RERA no: P51800028688.</div>
+
+
+    <!-- CONTACT US -->
+
+    <div id="contactUs">
+        <h1><span style="color: rgba(165, 42, 42,1);">CONTACT</span> US</h1>
+
+        <form id="contactForm" action="contact-form" action="contactform.php" method="post">
+            <input class="textArea" type="text" name="name" id="" placeholder="Full Name">
+            <input class="textArea" type="text" name="mail" id="" placeholder="Your E-Mail">
+            <input class="textArea" type="text" name="subject" id="" placeholder="Subject">
+            <textarea class="textArea" name="message" placeholder="Message"></textarea>
+            <button id="submitButton" type="submit" name="submit">Submit</button>
+        </form>
+
+        <div class="row" id="contactInfo">
+            <div class="col-lg-6">
+                <h2>RERA COMPLAINTS GUIDANCE CELL</h2>
+                <h5>The Consumer's Guidance & Protection Society</h5>
+            </div>
+
+            <div class="col-lg-6">
+                <p>E-Mail: reracomplaintsguidancecell@gmail.com</p>
+                <p>Address: Deshmukhwadi Complex, Mansneha Bunglow,
+                    Junction of P.K. Road<br> & Zaver Road, Near Mahakavi Kalidas Hall, Mulund (W), Mumbai-400080.</p>
+                <p>Regd No. Bom-507/93/G.B.B.S.D.</p>
+            </div>
+
+        </div>
+
+
     </div>
-  </div>
 
-  <div id="copyright">
-    <p>Copyright © Kshitij Realtors & Developers 2015. All Rights Reserved |</p>
-  </div>
+
+
+
+    <!-- CONTACT US END -->
+
+    <!-- FOOTER -->
+
+    <div style="height: 40px; width: 100%; background-color: rgba(244, 239, 239,1); font-size: 13px;
+    text-align: center; padding-top: 7px;">
+        <p>Copyright © RERA COMPLAINTS GUIDANCE CELL. All Rights Reserved |</p>
+    </div>
+
+    <!-- FOOTER ENDS -->
 </body>
 
 </html>
