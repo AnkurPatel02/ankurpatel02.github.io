@@ -1,0 +1,485 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "proxima-nova", sans-serif;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    background: white;
+    height: 130px;
+    width: 100%;
+    position: fixed;
+    transition: all .5s;
+    z-index: 1;
+}
+
+#navContent{
+    width: 60%;
+    margin-left: 20%;
+}
+
+#logo {
+    height: 130px;
+    transition: ease .5s;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    line-height: 130px;
+    transition: .5s ease;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+nav ul li a {
+    color: black;
+    font-size: 1rem;
+    padding: 7px 7px;
+    border-radius: 3px;
+    transition: .5s ease;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    text-decoration: none;
+}
+
+
+a.active,
+a:hover {
+    font-size: 1.2em;
+    color: white;
+}
+
+.checkbtn {
+    font-size: 2rem;
+    color: black;
+    float: right;
+    /* margin-right: 40px; */
+    cursor: pointer;
+    display: none;
+    transition: .5s ease;
+}
+
+#check {
+    display: none;
+}
+
+
+/* @media(max-width:1200px) {
+    nav ul li a {
+        font-size: 1rem;
+        padding: 7px 7px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    nav ul {
+        line-height: 100px;
+    }
+
+    #logo {
+        height: 100px;
+    }
+} */
+
+@media (max-width:1200px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    #navContent{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #logo {
+        height: 80px;
+    }
+
+    .checkbtn {
+        line-height: 80px;
+    }
+
+    #navButton {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        text-decoration: none;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #navButton li:hover{
+        color: aliceblue;
+    }
+    
+    a:hover,a.active {
+        background: none;
+        color: black;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+
+}
+
+nav.sticky {
+    height: 70px;
+}
+
+#logo.sticky {
+    height: 70px;
+}
+
+#navButton.sticky {
+    line-height: 70px;
+    top: 70px;
+}
+
+.checkbtn.sticky {
+    line-height: 70px;
+}
+
+/* NAVITAGION BAR END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COVER */
+#cover{
+    width: 100%;
+    position: relative;
+}
+
+#coverImg{
+    width: 100%;
+}
+#coverImgMobile{
+    display: none;
+}
+
+#division{
+    width: 45%;
+    height: 100%;
+    background-color:  rgba(255, 255, 255,0.8);
+    background-color: rgba(165, 42, 42,0.8);
+    position: absolute;
+}
+#mobileTitle{
+    display: none;
+}
+
+
+#textContainer{
+    margin-top: 300px;
+    margin-left: 45%;
+}
+
+.coverText{
+    margin-top: 20px;
+    color: white;
+}
+
+#textContainer h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width:1200px){
+    #cover{
+        /* position: static; */
+    }
+    #coverImg{
+        display: none;
+    }
+    #coverImgMobile{
+        display: block;
+        width: 100%;
+    }
+    #division{
+        display: none;
+    }
+    #mobileTitle{
+        display: block;
+        background-color: rgba(165, 42, 42,0.9);
+    }
+    #mobileTitle {
+        text-align: center;
+        padding: 5px;
+    }
+    #mobileTitle h1 {
+        font-size: 25px;        
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #mobileTitle h2 {
+        font-size: 20px;
+    }
+    #mobileTitle h4 {
+        font-size: 18px;
+    }
+}
+
+/* COVER END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT US */
+#aboutUs{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: -16px;
+}
+
+#divisionAboutUs{
+    width: 45%;
+    background-color: rgba(244, 239, 239,0.7);
+    height: 600px;
+    position: absolute;
+}
+
+#aboutUsContent{
+    width: 60%;
+    margin-left: 20%;
+    position: absolute;
+}
+
+#aboutUsContent h1{
+    font-size: 70px;
+    margin-top: 50px;
+    color: rgba(165, 42, 42,1);
+}
+#us{
+    font-size: 70px;
+    margin-top: -30px;
+    font-weight: 350;
+    float: left;
+}
+#aboutPara {
+    width: 50%;
+    margin-right: 0px;
+    margin-top: -40px;
+    float: right;
+    text-align: center;
+}
+/* ABOUT US END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PARTNER */
+
+#partner{
+    /* background-color: rgba(244, 239, 239,0.7); */
+    width: 100%;
+    height: 700px;
+}
+
+#partner h1{
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 65px;
+    font-weight: 400;
+}
+
+#partnerContent{
+    width: 60%;
+    margin-left: 25%;
+}
+
+.partnerInfo{
+    float: left;
+}
+
+.partnerImage{
+    height: 300px;
+    width: 300px;
+    border-width: 3px;
+    border-style: solid;
+    border-top-style: none;
+    padding: 15px;
+}
+
+.partnerInfo h2{
+    margin-bottom: -10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.partnerInfo p{
+    width: 300px;
+    text-align: center;
+}
+
+/* PARTNER ENDS */
+
+
+
+
+
+
+
+
+
+/* FAQ'S */
+#faq{
+    background-color: rgba(244, 239, 239,0.7);
+}
+
+#faq h1{
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 65px;
+    font-weight: 400;
+}
+
+
+/* carousel */
+.carousel-item{
+    margin-left: 20%;
+    width: 60%;
+}
+
+.question{
+    background-color: rgba(244, 239, 239,1);
+    padding: 15px;
+    text-align: center;
+}
+.answer{
+    padding: 15px;
+    text-align: center;
+}
+.card{
+    float: left;
+    width: 18%;
+    margin-bottom: 100px;
+}
+
+.card h5{
+    border-width: 5px;
+}
+
+/* FAQ ENDS */
+
+
+
+
+
+
+
+/* CONTACT US */
+#contactUs h1{
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 65px;
+    font-weight: 400;
+}
+
+
+#contactForm{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.textArea{
+    width: 70%;
+    margin: 8px 15%;
+    padding: 2px 10px;
+    border-radius: 5px;
+    border-width: 2px;
+    font-size: 18px;
+}
+
+#submitButton{
+    padding: 10px;
+    color: rgba(165, 42, 42,1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    margin: 0px 0px 10px 15%;
+}
+
+#contactInfo{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+
+
+/* CONTACT US END */
