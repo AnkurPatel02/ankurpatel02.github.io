@@ -11,6 +11,48 @@ body {
 }
 
 
+.popup{
+    width: 100%;
+    height: 550px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    /* display: none; */
+    /* z-index: 10; */
+}
+.popup img{
+    margin-left: 26rem;
+    cursor: pointer;
+    height: 3.5vh;
+}
+.popup h1{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.popup p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: justify;
+    color: #636e72;
+}
+.popup button{
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    width: 120px;
+    background-color: #c4e538;
+    border: 0px;
+    outline: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
 /* NAVIGATION BAR */
 
 nav {
@@ -392,14 +434,14 @@ nav.sticky {
         text-align: center;
         margin-top: 30px;
         display: inline-block;
-        font-size: 50px;
+        font-size: 45px;
     }
 
     #us {
         text-align: center;
         display: inline-block;
         float: none;
-        font-size: 50px;
+        font-size: 45px;
     }
 
     #aboutPara {
@@ -441,12 +483,14 @@ nav.sticky {
 }
 
 #partnerContent {
-    width: 60%;
-    margin-left: 20%;
+    width: 700px;
+    margin: 0px auto 0px auto;
+    /* margin-left: 20%; */
+    padding-left: 25px;
 }
 
 .partnerInfo {
-    float: left;
+    /* float: left; */
 }
 
 .partnerImage {
@@ -471,12 +515,12 @@ nav.sticky {
     padding-bottom: 50px;
 }
 
-@media (max-width:1200px) {
+/* @media (max-width:1200px) {
     #partnerContent {
         width: 70%;
         margin-left: 15%;
     }
-}
+} */
 
 @media (max-width:990px) {
     #partnerInfo {
@@ -484,8 +528,8 @@ nav.sticky {
     }
 
     #partnerContent {
-        width: 300px;
-        margin: 0px auto;
+        width: 350px;
+        margin: 0px auto 0px auto;
     }
     #partner h1 {
         padding: 100px 0px 50px;
@@ -688,5 +732,9 @@ nav.sticky {
     #contactInfo .col-lg-6{
         padding-bottom: 60px;
     }
+    #footer{
+        font-size: 7px;
+    }
 }
 /* CONTACT US END */
+
