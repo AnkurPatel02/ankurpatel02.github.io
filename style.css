@@ -22,7 +22,7 @@ nav {
     z-index: 1;
 }
 
-#navContent{
+#navContent {
     width: 60%;
     margin-left: 20%;
 }
@@ -77,6 +77,11 @@ a:hover {
     display: none;
 }
 
+@media (max-width:1400px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+}
 
 /* @media(max-width:1200px) {
     nav ul li a {
@@ -106,7 +111,7 @@ a:hover {
         height: 80px;
     }
 
-    #navContent{
+    #navContent {
         width: 90%;
         margin-left: 0px;
         margin-right: 10%;
@@ -142,11 +147,12 @@ a:hover {
         font-size: 20px;
     }
 
-    #navButton li:hover{
+    #navButton li:hover {
         color: aliceblue;
     }
-    
-    a:hover,a.active {
+
+    a:hover,
+    a.active {
         background: none;
         color: black;
     }
@@ -191,74 +197,94 @@ nav.sticky {
 
 
 /* COVER */
-#cover{
+#cover {
     width: 100%;
     position: relative;
 }
 
-#coverImg{
+#coverImg {
     width: 100%;
 }
-#coverImgMobile{
+
+#coverImgMobile {
     display: none;
 }
 
-#division{
+#division {
     width: 45%;
     height: 100%;
-    background-color:  rgba(255, 255, 255,0.8);
-    background-color: rgba(165, 42, 42,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(165, 42, 42, 0.8);
     position: absolute;
 }
-#mobileTitle{
+
+#mobileTitle {
     display: none;
 }
 
 
-#textContainer{
+#textContainer {
     margin-top: 300px;
     margin-left: 45%;
 }
 
-.coverText{
+.coverText {
     margin-top: 20px;
     color: white;
 }
 
-#textContainer h1{
+#textContainer h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-@media (max-width:1200px){
-    #cover{
-        /* position: static; */
+@media (max-width:1400px) {
+    #textContainer h1 {
+        font-size: 20px;
     }
-    #coverImg{
+
+    #textContainer h2 {
+        font-size: 17px;
+    }
+
+    #textContainer h4 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:990px) {
+      #coverImg {
         display: none;
     }
-    #coverImgMobile{
+
+    #coverImgMobile {
         display: block;
         width: 100%;
     }
-    #division{
+
+    #division {
         display: none;
     }
-    #mobileTitle{
+
+    #mobileTitle {
         display: block;
-        background-color: rgba(165, 42, 42,0.9);
+        background-color: rgba(165, 42, 42, 0.9);
     }
+
     #mobileTitle {
         text-align: center;
         padding: 5px;
     }
+
     #mobileTitle h1 {
-        font-size: 25px;        
+        font-size: 25px;
         font-family: 'Times New Roman', Times, serif;
     }
+
     #mobileTitle h2 {
         font-size: 20px;
         margin-top: 12px;
     }
+
     #mobileTitle h4 {
         font-size: 18px;
         margin-top: 10px;
@@ -290,44 +316,101 @@ nav.sticky {
 
 
 /* ABOUT US */
-#aboutUs{
+#aboutUs {
     width: 100%;
     height: 600px;
     position: relative;
     margin-top: -16px;
 }
 
-#divisionAboutUs{
+#divisionAboutUs {
     width: 45%;
-    background-color: rgba(244, 239, 239,0.7);
+    background-color: rgba(244, 239, 239, 0.7);
     height: 600px;
     position: absolute;
 }
 
-#aboutUsContent{
+#aboutUsContent {
     width: 60%;
     margin-left: 20%;
     position: absolute;
 }
 
-#aboutUsContent h1{
+#about {
     font-size: 70px;
+    font-weight: 40s0;
     margin-top: 50px;
-    color: rgba(165, 42, 42,1);
+    color: rgba(165, 42, 42, 1);
 }
-#us{
+
+#us {
     font-size: 70px;
     margin-top: -30px;
     font-weight: 350;
     float: left;
 }
+
 #aboutPara {
     width: 50%;
     margin-right: 0px;
     margin-top: -40px;
     float: right;
     text-align: center;
+    overflow: auto;
 }
+
+
+@media (max-width:1200px) {
+    #aboutUsContent {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    #aboutPara {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:990px) {
+    #aboutUs {
+        width: 100%;
+        height: 600px;
+    }
+
+    #divisionAboutUs {
+        width: 100%;
+        height: 100px;
+    }
+
+    #aboutUsContent {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #about {
+        text-align: center;
+        margin-top: 30px;
+        display: inline-block;
+        font-size: 50px;
+    }
+
+    #us {
+        text-align: center;
+        display: inline-block;
+        float: none;
+        font-size: 50px;
+    }
+
+    #aboutPara {
+        width: 80%;
+        float: none;
+        margin-top: 25px;
+        margin-left: 10%;
+        text-align: center;
+    }
+}
+
 /* ABOUT US END */
 
 
@@ -344,29 +427,29 @@ nav.sticky {
 
 /* PARTNER */
 
-#partner{
+#partner {
     /* background-color: rgba(244, 239, 239,0.7); */
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
 }
 
-#partner h1{
+#partner h1 {
     text-align: center;
     padding: 100px 0px;
     font-size: 65px;
     font-weight: 400;
 }
 
-#partnerContent{
+#partnerContent {
     width: 60%;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
-.partnerInfo{
+.partnerInfo {
     float: left;
 }
 
-.partnerImage{
+.partnerImage {
     height: 300px;
     width: 300px;
     border-width: 3px;
@@ -375,15 +458,44 @@ nav.sticky {
     padding: 15px;
 }
 
-.partnerInfo h2{
+.partnerInfo h2 {
     margin-bottom: -10px;
     margin-left: 10px;
     font-size: 25px;
 }
 
-.partnerInfo p{
+.partnerInfo p {
     width: 300px;
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+@media (max-width:1200px) {
+    #partnerContent {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width:990px) {
+    #partnerInfo {
+        float: none;
+    }
+
+    #partnerContent {
+        width: 300px;
+        margin: 0px auto;
+    }
+    #partner h1 {
+        padding: 100px 0px 50px;
+        font-size: 45px;
+    }
+    .partnerInfo h2 {
+        margin-bottom: -10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
 }
 
 /* PARTNER ENDS */
@@ -397,11 +509,11 @@ nav.sticky {
 
 
 /* FAQ'S */
-#faq{
-    background-color: rgba(244, 239, 239,0.7);
+#faq {
+    background-color: rgba(244, 239, 239, 0.7);
 }
 
-#faq h1{
+#faq h1 {
     text-align: center;
     padding: 100px 0px;
     font-size: 65px;
@@ -410,28 +522,92 @@ nav.sticky {
 
 
 /* carousel */
-.carousel-item{
+.carousel-item {
     margin-left: 20%;
     width: 60%;
 }
 
-.question{
-    background-color: rgba(244, 239, 239,1);
+.question {
+    background-color: rgba(244, 239, 239, 1);
     padding: 15px;
     text-align: center;
 }
-.answer{
+
+.answer {
     padding: 15px;
     text-align: center;
 }
-.card{
+
+.card {
     float: left;
     width: 18%;
     margin-bottom: 100px;
 }
 
-.card h5{
+.card h5 {
     border-width: 5px;
+}
+
+#faqCarouselTablet {
+    display: none;
+}
+
+#faqCarouselMobile {
+    display: none;
+}
+
+@media (max-width:1400px) {
+    .carousel-item {
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    .card {
+        float: left;
+        width: 34%;
+        margin-bottom: 100px;
+    }
+
+    #faqCarouselTablet {
+        display: block;
+    }
+
+    #faqCarousel {
+        display: none;
+    }
+
+    #faqCarouselMobile {
+        display: none;
+    }
+    #faq h1 {
+        padding: 70px 0px;
+    }
+}
+
+
+@media (max-width:990px) {
+    #faq h1 {
+        padding: 50px 0px;
+        font-size: 50px;
+    }
+    #faqCarouselMobile {
+        display: block;
+    }
+
+    #faqCarouselTablet {
+        display: none;
+    }
+
+    .carousel-item {
+        margin-left: 0%;
+    }
+
+    .card {
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 100px;
+    }
 }
 
 /* FAQ ENDS */
@@ -443,7 +619,7 @@ nav.sticky {
 
 
 /* CONTACT US */
-#contactUs h1{
+#contactUs h1 {
     text-align: center;
     padding: 100px 0px;
     font-size: 65px;
@@ -451,12 +627,12 @@ nav.sticky {
 }
 
 
-#contactForm{
+#contactForm {
     width: 60%;
     margin-left: 20%;
 }
 
-.textArea{
+.textArea {
     width: 70%;
     margin: 8px 15%;
     padding: 2px 10px;
@@ -465,24 +641,52 @@ nav.sticky {
     font-size: 18px;
 }
 
-#submitButton{
+#submitButton {
     padding: 10px;
-    color: rgba(165, 42, 42,1);
+    color: rgba(165, 42, 42, 1);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 700;
     border-radius: 5px;
     /* background-color: rgba(0, 0, 0, 0.7); */
-    margin: 0px 0px 10px 15%;
+    margin: 0px 15% 10px 0px;
+    float: right;
 }
 
-#contactInfo{
+#contactInfo {
     width: 70%;
     margin-left: 15%;
     text-align: center;
     padding: 100px 0px;
 }
 
+@media (max-width:1200px) {
+    #contactForm{
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+}
 
-
+@media (max-width:990px) {
+    #contactUs h1 {
+        padding: 70px 0px 50px;
+        font-size: 50px;
+    }
+    .textArea{
+        width: 70%;
+        margin: 8px 15%;
+    }
+    #submitButton{
+        margin: 0px 15% 0px 0px;
+    }
+    #contactInfo{
+        width: 96%;
+        margin-left: 2%;
+        padding: 70px 0px 0px 0px;
+    }
+    #contactInfo .col-lg-6{
+        padding-bottom: 60px;
+    }
+}
 /* CONTACT US END */
