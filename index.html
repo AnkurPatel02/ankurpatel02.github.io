@@ -35,19 +35,34 @@
 <body>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content" style="background-color: black; opacity: 0.85; color: white;">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Disclaimer</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="exampleModalLabel"
+                        style="text-align: center; width: 100%; margin: 0px auto 0px auto; font-size: 55px; font-family: 'Times New Roman', Times, serif;">
+                        DISCLAIMER</h5>
+                    <!-- <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                    </button>
+                    </button> -->
                 </div>
                 <div class="modal-body">
-                    <h1 style="text-align: center;">Hello, world!</h1>
+                    <p
+                        style="font-size: 20px;letter-spacing: 3px; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5% 15%">
+                        The
+                        Bar Council of India does not permit advertisement by advocates through any method or manner. By
+                        accessing this website, you acknowledge and confirm that you are seeking information for your
+                        own need and by your own will. There has been no form of advertisement or incitement by "RERA
+                        COMPLAINANTS GUIDANCE CELL or Their Members."
+
+                        The content of this website is for informational purposes only. It should not be construed as
+                        any kind of soliciting or advertisement. This site does not claim that any material or
+                        information is a legal advice. Hence "RERA COMPLAINANTS GUIDANCE CELL or Their Members" shall
+                        not be liable for any consequences or any action taken by the user relaying on the material or
+                        information provided on this website.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button style="margin: 0px auto;" type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
                     <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
@@ -62,11 +77,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $('#exampleModal').modal('show');
         });
-    </script>
+    </script> -->
 
 
     <nav>
@@ -75,7 +90,7 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <img id="logo" src="photos/logo.jpg" alt="">
+            <img id="logo" src="photos/logo3.png" alt="">
             <ul id="navButton">
                 <li><a class="" href="#cover">Overview</a></li>
                 <li><a href="#aboutUs">About Us</a></li>
@@ -90,14 +105,14 @@
     <div id="cover">
         <div id="mobileTitle">
             <h1 class="coverText">RERA COMPLAINTS GUIDANCE CELL</h1>
-            <h2 class="coverText">The Consumer's Guidance & Protection Society</h2>
-            <h4 class="coverText">"Your Protection Out Duty"</h4>
+            <!-- <h2 class="coverText">The Consumer's Guidance & Protection Society</h2> -->
+            <h4 class="coverText">"Your Protection, Our Duty"</h4>
         </div>
         <div id="division">
             <div id="textContainer">
                 <h1 class="coverText">RERA COMPLAINTS GUIDANCE CELL</h1>
-                <h2 class="coverText">The Consumer's Guidance & Protection Society</h2>
-                <h4 class="coverText">"Your Protection Out Duty"</h4>
+                <!-- <h2 class="coverText">The Consumer's Guidance & Protection Society</h2> -->
+                <h4 class="coverText">"Your Protection, Our Duty"</h4>
             </div>
         </div>
         <img id="coverImg" src="photos/cover1.jpg" alt="">
@@ -112,19 +127,14 @@
             <p id="us">US</p>
 
             <p id="aboutPara">
-                OUR VISION
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
-                double click me to add your own content and make changes to the font. Feel free to drag and drop me
-                anywhere you like on your page. I’m a great place for you to tell a story and let your users know a
-                little more about you.
-                This is a great space to write long text about your company and your services. You can use this space to
-                go into a little more detail about your company. Talk about your team and what services you provide.
-                Tell your visitors the story of how you came up with the idea for your business and what makes you
-                different from your competitors. Make your company stand out and show your visitors who you are.
-                At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all
-                thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s
-                Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the
-                Wix Forum.
+                "We, at Advocate Deshmukh's, situated in Mulund West, Mumbai, Maharashtra,
+                are a one stop shop offering a wide array of legal services. We specialize
+                in services for intellectual property rights,patents, trademarks,copyrights
+                and many more fields through our highly trained professionals. We also deal
+                in cases of MahaRERA, Family (Divorce) and Consumer Matters. We work
+                professionally and ethically with a result oriented approach. We are
+                strongly dedicated to our work and our services are remarkable. Our charges
+                are very affordable."
         </div>
         </p>
 
@@ -133,17 +143,46 @@
 
 
     <div id="partner">
-        <h1>OUR <span style="color: rgba(165, 42, 42,1);">ATTORNEYS</span></h1>
+        <h1>OUR <span style="color: rgba(165, 42, 42,1);">ATTORNEYS & ASSOCIATES</span></h1>
         <div id="partnerContent" class="row">
             <div class="partnerInfo col-lg-6 col-sm-12">
-                <h2>Rajeshwar M. Deshmukh</h2>
+                <h2>Advocate<br> Rajeshwar Deshmukh</h2>
+                <img src="photos/logo.jpg" alt="" class="partnerImage"><br><br><br>
+                <h2><br>Anushka Deshmukh</h2>
                 <img src="photos/logo.jpg" alt="" class="partnerImage">
-                <p>dkfjhglkjsdhfgksdhfklgjhfkdh<br>sdldfkjghkljsdhfgkj</p>
+
             </div>
             <div class="partnerInfo col-lg-6 col-sm-12">
-                <h2>Anushka R. Deshmukh</h2>
+                <p><br><br><br><br>Advocate Rajeshwar Deshmukh has completed his B.S.L-LLB having passed in 'First Class' from
+                    University of Poona in April, 1990.<br><br>
+                    Mr. Deshmukh is the Founder and Treasurer of The Consumer's Guidance and Protection Society and has
+                    been exclusively practicing in Property and RERA Matters since last 32 years.</p>
+
+                <p><br><br><br><br>She is pursuing her BBA-LLB (Hons) Degree from Mumbai University.<br><br>
+                    Currently in her 4th year, she has been interning with the Chambers since her 1st year of law school
+                    and has expertise in Legal Drafting, Property Matters, Divorce cases and handling client meetings.
+                </p>
+                <br><br><br>
+            </div>
+        </div>
+        <div id="partnerContentMobile" class="row">
+            <div class="partnerInfo col-lg-6 col-sm-12">
+                <h2>Advocate<br> Rajeshwar Deshmukh</h2>
                 <img src="photos/logo.jpg" alt="" class="partnerImage">
-                <p>dkfjhglkjsdhfgksdhfklgsdfa<br>sdfasdfafasfafsadafdfsdfsfass<br>sfasdjhfkdhsdldfkjghkljsdhfgkj</p>
+                <p>Advocate Rajeshwar Deshmukh has completed his B.S.L-LLB having passed in 'First Class' from
+                    University of Poona in April, 1990.<br><br>
+                    Mr. Deshmukh is the Founder and Treasurer of The Consumer's Guidance and Protection Society and has
+                    been exclusively practicing in Property and RERA Matters since last 32 years.</p>
+
+            </div>
+            <div class="partnerInfo col-lg-6 col-sm-12">
+                <h2><br>Anushka Deshmukh</h2>
+                <img src="photos/logo.jpg" alt="" class="partnerImage">
+                <p>She is pursuing her BBA-LLB (Hons) Degree from Mumbai University.<br><br>
+                    Currently in her 4th year, she has been interning with the Chambers since her 1st year of law school
+                    and has expertise in Legal Drafting, Property Matters, Divorce cases and handling client meetings.
+                </p>
+                <br><br><br>
             </div>
         </div>
     </div>
@@ -159,26 +198,26 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="card border-light">
-                        <h5 class="question">My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                        <h5 class="question">What are the other Legal Services that we provide?</h5>
+                        <p class="answer">Alongwith RERA Matters, We also specialise in Property Matter's
+                            Documentation [Drafting, Pleading and Conveyancing], Consumer Matters, Divorce
+                            Cases & Notary. </p>
+                    </div>
+                    <div class="card border-light" style=" margin: 0px 2%;">
+                        <h5 class="question">How will you/flat buyer know, if the real estate project is duly registered
+                            under MahaRERA?</h5>
+                        <p class="answer">The MahaRERA website would display all the registered projects.
+                            It is mandatory that the advertisement for marketing of apartments in the real estate
+                            project must carry the MahaRERA registration number.</p>
                     </div>
 
-                    <div class="card border-light" style=" margin: 0px 2%;">
-                        <h5 class="question">My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
                     <div class="card border-light">
-                        <h5 class="question">My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                        <h5 class="question">Which areas of Maharashtra are included in the Planning Area as defined in
+                            the Act?</h5>
+                        <p class="answer">In accordance with notifications issued by Urban Development Department of
+                            Government of Maharashtra, MR & TP Act is applicable to all the districts of Maharashtra.
+                            Hence, all areas of Maharashtra are included in Planning Area as defined in Section
+                            2(zh) of the Act.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -213,6 +252,12 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+
+            <div style="width: 100%; text-align: center; height: 40px;">
+                <a href="ReraFAQ.pdf" style=" padding: 15px; text-decoration: none; color: black;">
+                    For More FAQ's Click Here
+                </a>
+            </div>
         </div>
 
 
@@ -221,27 +266,28 @@
                 <div class="carousel-item active">
                     <div class="card border-light">
                         <h5 class="question">My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                        <h5 class="question">What are the other Legal Services that we provide?</h5>
+                        <p class="answer">Alongwith RERA Matters, We also specialise in Property Matter's
+                            Documentation [Drafting, Pleading and Conveyancing], Consumer Matters, Divorce
+                            Cases & Notary. </p>
                     </div>
 
                     <div class="card border-light" style=" margin: 0px 2%;">
-                        <h5 class="question">My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                        <h5 class="question">How will you/flat buyer know, if the real estate project is duly registered
+                            under MahaRERA?</h5>
+                        <p class="answer">The MahaRERA website would display all the registered projects.
+                            It is mandatory that the advertisement for marketing of apartments in the real estate
+                            project must carry the MahaRERA registration number.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="card border-light" style=" margin: 0px 2%;">
-                        <h5 class="question">11My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                        <h5 class="question">Which areas of Maharashtra are included in the Planning Area as defined in
+                            the Act?</h5>
+                        <p class="answer">In accordance with notifications issued by Urban Development Department of
+                            Government of Maharashtra, MR & TP Act is applicable to all the districts of Maharashtra.
+                            Hence, all areas of Maharashtra are included in Planning Area as defined in Section
+                            2(zh) of the Act.</p>
                     </div>
                     <div class="card border-light">
                         <h5 class="question">111My question is blah blah blah</h5>
@@ -278,6 +324,12 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+
+            <div style="width: 100%; text-align: center; height: 40px;">
+                <a href="ReraFAQ.pdf" style=" padding: 15px; text-decoration: none; color: black;">
+                    For More FAQ's Click Here
+                </a>
+            </div>
         </div>
 
 
@@ -286,31 +338,31 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="card border-light">
-                        <h5 class="question">My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                        <h5 class="question">What are the other Legal Services that we provide?</h5>
+                        <p class="answer">Alongwith RERA Matters, We also specialise in Property Matter's
+                            Documentation [Drafting, Pleading and Conveyancing], Consumer Matters, Divorce
+                            Cases & Notary. </p>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div class="card border-light">
-                        <h5 class="question">My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                        <h5 class="question">How will you/flat buyer know, if the real estate project is duly registered
+                            under MahaRERA?</h5>
+                        <p class="answer">The MahaRERA website would display all the registered projects.
+                            It is mandatory that the advertisement for marketing of apartments in the real estate
+                            project must carry the MahaRERA registration number.</p>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div class="card border-light">
-                        <h5 class="question">11My question is blah blah blah</h5>
-                        <p class="answer">the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            the solution we provide wil be blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                        <h5 class="question">Which areas of Maharashtra are included in the Planning Area as defined in
+                            the Act?</h5>
+                        <p class="answer">In accordance with notifications issued by Urban Development Department of
+                            Government of Maharashtra, MR & TP Act is applicable to all the districts of Maharashtra.
+                            Hence, all areas of Maharashtra are included in Planning Area as defined in Section
+                            2(zh) of the Act.</p>
                     </div>
                 </div>
 
@@ -354,6 +406,11 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            <div style="width: 100%; text-align: center; height: 40px;">
+                <a href="ReraFAQ.pdf" style=" padding: 15px; text-decoration: none; color: black;">
+                    For More FAQ's Click Here
+                </a>
+            </div>
         </div>
 
     </div>
@@ -376,15 +433,22 @@
 
         <div class="row" id="contactInfo">
             <div class="col-lg-6">
-                <h2>RERA COMPLAINTS GUIDANCE CELL</h2>
-                <h5>The Consumer's Guidance & Protection Society</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.
+                53040679660913!2d72.95061305623409!3d19.173941712020067!2m3!1f0!2f0!3f0
+                !3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8f99413350b%3A0x12453b434bf2d937!
+                2sAdvocate%20Deshmukh&#39;s!5e0!3m2!1sen!2sin!4v1646495944017!5m2!1sen!2sin" width="90%" height="450"
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+                <!-- <h2>RERA COMPLAINTS<br> &<br> GUIDANCE CELL</h2> -->
             </div>
 
             <div class="col-lg-6">
-                <p>E-Mail: reracomplaintsguidancecell@gmail.com</p>
-                <p>Address: Deshmukhwadi Complex, Mansneha Bunglow,
+                <h2>RERA COMPLAINTS GUIDANCE CELL</h2>
+                <p style="padding: 7% 0px 0px 0px;">E-Mail: reracomplaintsguidancecell@gmail.com</p>
+                <p>Address: Ground Floor, Neptune Gulmohar,
                     Junction of P.K. Road & Zaver Road, Near Mahakavi Kalidas Hall, Mulund (W), Mumbai-400080.</p>
-                <p>Regd No. Bom-507/93/G.B.B.S.D.</p>
+                <!-- <p>Regd No. Bom-507/93/G.B.B.S.D.</p> -->
+                <p>Timings: 11a.m. - 7p.m.</p>
             </div>
 
         </div>
@@ -405,6 +469,12 @@
     </div>
 
     <!-- FOOTER ENDS -->
+
+    <a href="https://wa.me/919920877378?text=Hi,%20I%20need%20help%20with%20a%20legal%20matter%20regarding%20RERA">
+        <img src="photos/whatsapp1.png" alt="" id="waicon" class="whatsapp">
+        <img src="photos/whatsapp logo.png" alt="" id="waiconMobile" class="whatsapp">
+    </a>
+
 </body>
 
 </html>

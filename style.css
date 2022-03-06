@@ -4,21 +4,23 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     font-family: "proxima-nova", sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 
-.popup{
+/* .popup{
     width: 100%;
     height: 550px;
     padding: 2rem;
     background-color: #fff;
     border-radius: 10px;
-    /* display: none; */
-    /* z-index: 10; */
+    display: none;
+    z-index: 10;
 }
 .popup img{
     margin-left: 26rem;
@@ -44,9 +46,13 @@ body {
     border: 0px;
     outline: none;
     color: #fff;
+} */
+
+@media(max-width:990px) {
+    .modal-body p {
+        padding: 5% 0%;
+    }
 }
-
-
 
 
 
@@ -122,6 +128,10 @@ a:hover {
 @media (max-width:1400px) {
     nav ul li a {
         font-size: 14px;
+    }
+    #navContent {
+        width: 70%;
+        margin-left: 15%;
     }
 }
 
@@ -273,15 +283,28 @@ nav.sticky {
 .coverText {
     margin-top: 20px;
     color: white;
+    text-align: center;
 }
 
 #textContainer h1 {
+    font-size: 45px;
+    /* text-align: left; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#textContainer h4 {
+    padding-top: 20px;
+    font-size: 27px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 @media (max-width:1400px) {
+    #textContainer {
+        margin-top: 250px;
+    }
+
     #textContainer h1 {
-        font-size: 20px;
+        font-size: 37px;
     }
 
     #textContainer h2 {
@@ -289,12 +312,12 @@ nav.sticky {
     }
 
     #textContainer h4 {
-        font-size: 15px;
+        font-size: 22px;
     }
 }
 
 @media (max-width:990px) {
-      #coverImg {
+    #coverImg {
         display: none;
     }
 
@@ -360,7 +383,7 @@ nav.sticky {
 /* ABOUT US */
 #aboutUs {
     width: 100%;
-    height: 600px;
+    height: 500px;
     position: relative;
     margin-top: -16px;
 }
@@ -368,7 +391,7 @@ nav.sticky {
 #divisionAboutUs {
     width: 45%;
     background-color: rgba(244, 239, 239, 0.7);
-    height: 600px;
+    height: 500px;
     position: absolute;
 }
 
@@ -380,7 +403,7 @@ nav.sticky {
 
 #about {
     font-size: 70px;
-    font-weight: 40s0;
+    font-weight: 400;
     margin-top: 50px;
     color: rgba(165, 42, 42, 1);
 }
@@ -394,10 +417,11 @@ nav.sticky {
 
 #aboutPara {
     width: 50%;
+    font-size: 18px;
     margin-right: 0px;
     margin-top: -40px;
     float: right;
-    text-align: center;
+    text-align: justify;
     overflow: auto;
 }
 
@@ -416,7 +440,7 @@ nav.sticky {
 @media (max-width:990px) {
     #aboutUs {
         width: 100%;
-        height: 600px;
+        height: 450px;
     }
 
     #divisionAboutUs {
@@ -483,33 +507,39 @@ nav.sticky {
 }
 
 #partnerContent {
-    width: 700px;
+    width: 800px;
     margin: 0px auto 0px auto;
     /* margin-left: 20%; */
     padding-left: 25px;
 }
 
-.partnerInfo {
-    /* float: left; */
+#partnerContentMobile {
+    display: none;
 }
 
+/* .partnerInfo {
+    float: left;
+} */
+
 .partnerImage {
-    height: 300px;
-    width: 300px;
+    height: 320px;
+    width: 325px;
     border-width: 3px;
     border-style: solid;
     border-top-style: none;
-    padding: 15px;
+    padding:15px;
 }
 
 .partnerInfo h2 {
+    text-align: center;
+    width: 300px;
     margin-bottom: -10px;
-    margin-left: 10px;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .partnerInfo p {
-    width: 300px;
+    /* width: 300px; */
     text-align: center;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -528,17 +558,24 @@ nav.sticky {
     }
 
     #partnerContent {
+        display: none;
+    }
+
+    #partnerContentMobile {
+        display: block;
         width: 350px;
         margin: 0px auto 0px auto;
     }
+
     #partner h1 {
         padding: 100px 0px 50px;
         font-size: 45px;
     }
+
     .partnerInfo h2 {
         margin-bottom: -10px;
         margin-left: 10px;
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
@@ -623,6 +660,7 @@ nav.sticky {
     #faqCarouselMobile {
         display: none;
     }
+
     #faq h1 {
         padding: 70px 0px;
     }
@@ -634,6 +672,7 @@ nav.sticky {
         padding: 50px 0px;
         font-size: 50px;
     }
+
     #faqCarouselMobile {
         display: block;
     }
@@ -666,8 +705,9 @@ nav.sticky {
 #contactUs h1 {
     text-align: center;
     padding: 100px 0px;
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 400;
+    /* font-family:'Times New Roman', Times, serif */
 }
 
 
@@ -704,12 +744,23 @@ nav.sticky {
     padding: 100px 0px;
 }
 
+#contactInfo h2 {
+    color: rgba(165, 42, 42, 1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    padding: 5px 0px 20px 0px;
+}
+
+/* #contactInfo .col-lg-6 p{
+    padding: 20% 0px 0px 0px;
+} */
+
 @media (max-width:1200px) {
-    #contactForm{
+    #contactForm {
         width: 100%;
         margin-left: 0%;
     }
-    
+
 }
 
 @media (max-width:990px) {
@@ -717,24 +768,60 @@ nav.sticky {
         padding: 70px 0px 50px;
         font-size: 50px;
     }
-    .textArea{
+
+    .textArea {
         width: 70%;
         margin: 8px 15%;
     }
-    #submitButton{
+
+    #submitButton {
         margin: 0px 15% 0px 0px;
     }
-    #contactInfo{
+
+    #contactInfo {
         width: 96%;
         margin-left: 2%;
         padding: 70px 0px 0px 0px;
     }
-    #contactInfo .col-lg-6{
+
+    #contactInfo .col-lg-6 {
         padding-bottom: 60px;
     }
-    #footer{
+
+    #footer {
         font-size: 7px;
     }
 }
+
 /* CONTACT US END */
 
+
+.whatsapp {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 20;
+    float: right;
+}
+#waiconMobile{
+    display: none;
+}
+#waicon{
+    width: 160px;
+    height: 60px;
+}
+
+@media (max-width:990px) {
+    .whatsapp{
+        right: 30px;
+        bottom: 30px;
+    }
+    #waiconMobile{
+        display: block;
+    }
+    #waicon{
+        display: none;
+    }
+}
